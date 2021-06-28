@@ -25,7 +25,7 @@ gitのバージョンによって、初期ブランチの名前がmasterもし�
 ## 自己紹介 個人編
 - ローカルレポジトリを作成する。'git init'
 - mainブランチにて、'myname.md'ファイルを作成する。
-- # 自己紹介 # 名前 # 身長 # 体重 の順に3回程度コミットする。 'git add' 'git commit' (前後で'git status'すると状態を確認できる。)
+- 自己紹介、名前、身長、体重の順に3回程度コミットする。 'git add' 'git commit' (前後で'git status'すると状態を確認できる。)
 - mainブランチに移動する。 'git checkout main'
 - mainブランチにmyfamilyブランチをマージする。 'git merge myfamily'
 - (myfamilyブランチを削除する。 'git branch -d myfamily')
