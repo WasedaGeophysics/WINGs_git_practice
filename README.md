@@ -20,7 +20,8 @@ WINGs2021のGitHub勉強会の練習用
 
 ファイル名は原則、'name.md'で統一する。コンフリクトを起こすため。
 例えば、あなたの名前がskosakaならファイル名は'skosaka.md'とする。
-なお、gitのバージョンによって、初期ブランチの名前がmasterもしくはmainになりますが、ここでは最新版のmainに統一します。
+なお、gitの最近のバージョンでは、初期ブランチの名前がmasterではなくmainになります。ここでは最新版のmainに統一します。
+また、gitのバージョン2.23.0でブランチの切り替えも'checkout'の同じ働きをする'switch'がリリースされた。ここでは'switch'を使うことにする。
 
 ## 個人編
 ### 自己紹介 ローカルリモートリポジトリ
@@ -37,11 +38,11 @@ WINGs2021のGitHub勉強会の練習用
 
 ### 家族紹介 ブランチ
 ブランチを切りまくって、家系図を作ります。
-- myfamilyブランチを切る。 'git branch myfamily' + 'git checkout myfamily' or 'git checkout -b myfamily'
+- myfamilyブランチを切る。 'git branch myfamily' + 'git switch myfamily' or 'git switch -c myfamily'
 - myfamilyブランチから、fatherブランチを切る。 'git branch father'
-- fatherブランチに移動する。 'git checkout father'
+- fatherブランチに移動する。 'git switch father'
 - fatherブランチにて、父親や父親の家族について.mdファイルを作成し、それぞれコミットする。
-- myfamilyブランチに移動し、motherブランチを切る。 'git checkout myfamily' + 'git branch mother'
+- myfamilyブランチに移動し、motherブランチを切る。 'git switch myfamily' + 'git branch mother'
 - motherブランチに関してもfatherブランチと同様の操作を行う。
 - branchを確認する。 'git branch' (main, myfamily, father, motherの4つ)
 - myfamilyブランチに移動する。 'git checkout myfamily'
