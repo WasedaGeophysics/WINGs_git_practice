@@ -8,6 +8,7 @@ WINGs2021のGitHub勉強会の練習用
 ## 目標
 - VScodeを使って、gitの操作に慣れる。 'git add' 'git commit' 'git push' 'git pull'
 - チーム開発におけるコンフリクトを解消する。
+- 余力がある人は同様の操作をTerminalにて実施する。
 
 # 内容
 研究室のメンバー紹介についての記事を書くことを通して、Git・GitHubを学ぶ。
