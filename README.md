@@ -1,0 +1,2 @@
+# WINGs_git_practice
+WINGs2021のGitHub勉強会の練習用
