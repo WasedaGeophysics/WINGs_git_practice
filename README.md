@@ -55,7 +55,6 @@ WINGs2021のGitHub勉強会の練習用
 ## チーム編
 ## 研究室メンバー紹介 
 - リモートリポジトリを複製し、ローカルリモートリポジトリを作成する。 'git clone URL'  ('git init'や'git remote add origin URL'が要らなくなる)
-- ローカルリポジトリにリモートリポジトリを反映する。 'git fetch origin main' + 'git merge origin/main' or 'git pull origin main'
 - リモートリポジトリにローカルリポジトリを反映する。 'git push origin myname'
 - GitHubにてプルリクエストをタスク管理者のGitHubに送信する。
 - GitHubにてリクエストをタスク管理者が承認してマージする。 (みんなが違う名前でファイル名を作成していれば、コンフリクトは発生しないはず。)
