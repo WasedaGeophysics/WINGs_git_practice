@@ -68,5 +68,5 @@ WINGs2021のGitHub勉強会の練習用
 https://qiita.com/thinkalot/items/817079a952b5f145dbc7
 ### Git with VScode
 https://qiita.com/jesus_isao/items/63557eba36819faa4ad9
-### 'git pull'とは
+### `git pull`とは
 https://qiita.com/wann/items/688bc17460a457104d7d
