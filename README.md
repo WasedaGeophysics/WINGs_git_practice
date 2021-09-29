@@ -1,12 +1,12 @@
 # WINGs_git_practice
 WINGs2021のGitHub勉強会の練習用
 
-## 概要
+# 概要
 - 個人でGit・GitHubを使う
 - チームでGitHubを使う
 
-## 目標
-- VScodeを使って、gitの操作に慣れる。 'git add' 'git commit' 'git push' 'git pull'
+# 目標
+- VScodeを使って、gitの操作に慣れる。 `git add` `git commit` `git push` `git pull`
 - チーム開発におけるコンフリクトを解消する。
 - 余力がある人は同様の操作をTerminalにて実施する。
 
@@ -18,55 +18,52 @@ WINGs2021のGitHub勉強会の練習用
 2. 家族紹介 (仮名で)
 3. 研究室メンバー紹介 (自己紹介の名前を見て)
 
-ファイル名は原則、'name.md'で統一する。コンフリクトを起こすため。
-例えば、あなたの名前がskosakaならファイル名は'skosaka.md'とする。
-なお、gitの最近のバージョンでは、初期ブランチの名前がmasterではなくmainになります。ここでは最新版のmainに統一します。
-また、gitのバージョン2.23.0でブランチの切り替えも'checkout'の同じ働きをする'switch'がリリースされた。ここでは'switch'を使うことにする。
+ファイル名は原則、`name.md`で統一する。コンフリクトを起こすため。
+例えば、あなたの名前がskosakaならファイル名は`skosaka.md`とする。
+なお、gitの最近のバージョンでは、初期ブランチの名前がmasterではなくmainとなる。ここでは最新版のmainに統一する。
+また、gitのバージョン2.23.0でブランチの切り替えも`checkout`の同じ働きをする`switch`がリリースされた。ここでは`switch`を使うことにする。
 
 ## 個人編
 ### 自己紹介 ローカルリモートリポジトリ
-- ローカルレポジトリを作成する。'git init'
-- mainブランチにて、'myname.md'ファイルを作成する。
-- 自己紹介、名前、性別、年齢、(その他、身長、体重など)の順に3回程度コミットする。 'git add' 'git commit' (前後で'git status'すると状態を確認できる。)
+- ローカルレポジトリを作成する。`git init`
+- mainブランチにて、`myname.md`ファイルを作成する。
+- 自己紹介、名前、性別、年齢、(その他、身長、体重など)の順に3回程度コミットする。 `git add` `git commit` (前後で`git status`すると状態を確認できる。)
 
 ### 自己紹介 リモートリポジトリ
-- GitHubにてリモートリポジトリをself_introductionという名前で作成する。ただし、README.mdファイルは作成しない。
-- 個人のリモートリポジトリに登録する。 'git remote add origin URL' (前後で'git remote'すると状態を確認できる。)
-- ローカルリポジトリにリモートリポジトリを反映する。 'git fetch origin main' + 'git merge origin/main' or 'git pull origin main'
-- リモートリポジトリにローカルリポジトリを反映する。 'git push origin main'
+- GitHubにてリモートリポジトリを`self_introduction`という名前で作成する。ただし、`README.md`ファイルは作成しない。
+- 個人のリモートリポジトリに登録する。 `git remote add origin URL` (前後で`git remote`すると状態を確認できる。)
+- ローカルリポジトリにリモートリポジトリを反映する。 `git fetch origin main` + `git merge origin/main` or `git pull origin main`
+- リモートリポジトリにローカルリポジトリを反映する。 `git push origin main`
 - GitHubを確認する。
 
 ### 家族紹介 ブランチ
 ブランチを切りまくって、家系図を作ります。
-- myfamilyブランチを切る。 'git branch myfamily' + 'git switch myfamily' or 'git switch -c myfamily'
-- myfamilyブランチから、fatherブランチを切る。 'git branch father'
-- fatherブランチに移動する。 'git switch father'
-- fatherブランチにて、父親や父親の家族について.mdファイルを作成し、それぞれコミットする。
-- myfamilyブランチに移動し、motherブランチを切る。 'git switch myfamily' + 'git branch mother'
+- myfamilyブランチを切る。 `git branch myfamily` + `git switch myfamily` or `git switch -c myfamily`
+- myfamilyブランチから、fatherブランチを切る。 `git branch father`
+- fatherブランチに移動する。 `git switch father`
+- fatherブランチにて、父親や父親の家族について`???.md`ファイルを作成し、それぞれコミットする。
+- myfamilyブランチに移動し、motherブランチを切る。 `git switch myfamily` + `git branch mother`
 - motherブランチに関してもfatherブランチと同様の操作を行う。
-- branchを確認する。 'git branch' (main, myfamily, father, motherの4つ)
-- myfamilyブランチに移動する。 'git checkout myfamily'
-- myfamilyブランチにfatherブランチをマージする。 'git merge father'
-- myfamilyブランチにmotherブランチをマージする。 'git merge mother'
-- リモートリポジトリにローカルリポジトリを反映する。 'git push myfamily' (多分追跡されているはず)
+- branchを確認する。 `git branch` (main, myfamily, father, motherの4つ)
+- myfamilyブランチに移動する。 `git checkout myfamily`
+- myfamilyブランチにfatherブランチをマージする。 `git merge father`
+- myfamilyブランチにmotherブランチをマージする。 `git merge mother`
+- リモートリポジトリにローカルリポジトリを反映する。 `git push myfamily` (多分追跡されているはず)
 - GitHubにてプルリクエストを自分に送信する。
 - GitHubにてリクエストを自分で承認してマージする。
 
 ## チーム編
-## 研究室メンバー紹介 
-- リモートリポジトリを複製し、ローカルリモートリポジトリを作成する。 'git clone URL'  ('git init'や'git remote add origin URL'が要らなくなる)
-- リモートリポジトリにローカルリポジトリを反映する。 'git push origin myname'
+### 自己紹介 
+- タスク管理者はメンバーを共同編集者に登録し、`push`できる状態にする。
+- リモートリポジトリを複製し、ローカルリモートリポジトリを作成する。 `git clone URL`  (`git init`や`git remote add origin URL`が要らなくなる)
+- リモートリポジトリにローカルリポジトリを反映する。 `git push origin myname`
 - GitHubにてプルリクエストをタスク管理者のGitHubに送信する。
 - GitHubにてリクエストをタスク管理者が承認してマージする。 (みんなが違う名前でファイル名を作成していれば、コンフリクトは発生しないはず。)
-- みんなプルリクエストが完了したら、ローカルリポジトリにリモートリポジトリを反映し、最新の状態にする。 'git pull'  (多分追跡されているはず)
-- 
+- みんなプルリクエストが完了したら、ローカルリポジトリにリモートリポジトリを反映し、最新の状態にする。 `git pull`  (多分追跡されているはず)
 
-## 
+### 他己紹介
 
-
-## 他己紹介
-
-## 参考記事
+# 参考記事
 ### Gitコマンド 実践練習フロー
 https://qiita.com/thinkalot/items/817079a952b5f145dbc7
 ### Git with VScode
